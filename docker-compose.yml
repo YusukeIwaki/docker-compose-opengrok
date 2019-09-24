@@ -1,0 +1,20 @@
+version: '3'
+services:
+  opengrok:
+    image: opengrok/docker
+    volumes:
+      - opengrok-src:/opengrok/src
+    ports:
+      - 8080:8080
+
+  jiri:
+    build: .
+    volumes:
+      - opengrok-src:/app
+      - ./jiri_manifest:/app/.jiri_manifest
+    working_dir: /app
+    command: sh -c "jiri init && jiri update"
+
+volumes:
+  opengrok-src:
+    driver: local

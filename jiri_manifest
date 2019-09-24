@@ -1,0 +1,26 @@
+<!--
+  参考
+  https://fuchsia.googlesource.com/jiri/+/HEAD/manifest.md
+-->
+<manifest>
+  <projects>
+    <project name="rspec"
+      remote="https://github.com/rspec/rspec"
+      path="rspec" />
+    <project name="rspec-core"
+      remote="https://github.com/rspec/rspec-core"
+      path="rspec-core" />
+    <project name="rspec-support"
+      remote="https://github.com/rspec/rspec-support"
+      path="rspec-support" />
+    <project name="rspec-mocks"
+      remote="https://github.com/rspec/rspec-mocks"
+      path="rspec-mocks" />
+    <project name="rspec-rails"
+      remote="https://github.com/rspec/rspec-rails"
+      path="rspec-rails" />
+    <project name="rspec-expectations"
+      remote="https://github.com/rspec/rspec-expectations"
+      path="rspec-expectations" />
+  </projects>
+</manifest>
